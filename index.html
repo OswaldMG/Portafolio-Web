@@ -9,8 +9,15 @@
 <!--Uso de link para agregar fabicon-->
 	<link rel="icon" type="image/jpg" href="Imagenes/UPSLP.png">
 
+	<style type="text/css">
+		td{
+			border: 1px solid blue;
+			background-color: lightgreen;
+		}
+	</style>
+
 </head>
-<body>
+<body style="background-color: #E6FFCC">
 	<header>
 		<h1><p align="center">Portafolio de evidencias</h1>
 		<h1><p align="center">Programación web I</h1>
@@ -130,15 +137,47 @@
 				<li>Inicio</li>
 				<li>Parcial 1</li>
 					<ol>
-						<li><a href="file:///C:/Users/alexi/Documents/UPSLP_2Semestre/PrograWeb/Proyectos/Proyecto-PortafolioWeb/Portafolio-Web/Web/Archivos/Practica%201.pdf">Practica 1</a></li>
-						<li><a href="file:///C:/Users/alexi/Documents/UPSLP_2Semestre/PrograWeb/Proyectos/Proyecto-PortafolioWeb/Portafolio-Web/Web/Archivos/Actividad%202.pdf">Practica 2</a></li>
-						<li><a href="file:///C:/Users/alexi/Documents/UPSLP_2Semestre/PrograWeb/Proyectos/Proyecto-PortafolioWeb/Portafolio-Web/Web/Archivos/Practica%203.pdf">Practica 3</a></li>
+						<li><a href="Web/Archivos/Actividad 1.pdf" target="_blank">Practica 1</a></li>
+						<li><a href="Web/Archivos/Actividad 2.pdf">Practica 2</a></li>
+						<li><a href="Web/Archivos/Actividad 3.pdf">Practica 3</a></li>
 					</ol>
 				<li>Parcial 2</li>
 				<li>Parcial 3</li>
 				<li>Proyecto final</li>
 			</ul>
 		</section>
+		<h2>Tablas en HTML</h2>
+		<table style="border: 1px solid black; background-color: beige;">
+			<caption>Ejemplo de tablas</caption>
+			<thead>
+			<tr><!--Fila1-->
+				<th colspan="2" style="border: 1pc solid lightblue; background-color: orange;">Titulo 1</th>
+				<th>Titulo 2</th>
+				<th>Titulo 3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><!--Fila2-->
+				<td rowspan="2">Columna 1</td>
+				<td>Columna 2</td>
+				<td>Columna 3</td>
+			</tr>
+			<tr><!--Fila3-->
+				<td>Columna 4</td>
+				<td>Columna 5</td>
+				<td>Columna 6</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td>Columna 7</td>
+				<td>Columna 8</td>
+				<td>Columna 9</td>
+			</tr>
+		</tfoot>
+			
+		</table>
 	</nav>
 
 </body>
