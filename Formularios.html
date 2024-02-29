@@ -17,7 +17,14 @@
 	<form action="" method="post" enctype="text/plain">
 		<fieldset>
 			<legend align="center">Que rollo!!</legend>
-			<input type="text" name="usuario" maxlength="25" placeholder="Nombre del usuario">
+			<label for="usuario">Usuario:</label>
+			<input type="text" name="usuario" maxlength="25" placeholder="Nombre del usuario" title="Nombre del usuario">
+			<br>
+			<label for="pass">Password:</label>
+			<input type="password" name="pass"id="pass" maxlength="25" size="15" placeholder="Contraseña" title="Contraseña">
+			<br>
+			<label for="comentarios">Comentarios:</label>
+			<textarea name="comentarios" id="comentarios" rows="10" cols="30"></textarea>
 		</fieldset>
 	</form>
 </body>
