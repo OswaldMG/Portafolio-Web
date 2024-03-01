@@ -21,10 +21,41 @@
 			<input type="text" name="usuario" maxlength="25" placeholder="Nombre del usuario" title="Nombre del usuario">
 			<br>
 			<label for="pass">Password:</label>
-			<input type="password" name="pass"id="pass" maxlength="25" size="15" placeholder="Contraseña" title="Contraseña">
+			<input type="password" name="pass"id="pass" maxlength="25" size="15" placeholder="Contraseña" title="Contraseña" required="">
 			<br>
-			<label for="comentarios">Comentarios:</label>
+			<label for="correo">E-mail:</label>
+			<input type="email" name="correo" id="correo" required="">
+			<br>
+			<label for="Fechan">Fecha de Nacimiento</label>
+			<input type="date" name="Fechan" id="Fechan">
+			<br>
+			<label for="Mes">Mes de nacimiento:</label>
+			<input type="month" name="Mes" id="Mes">
+			<br>
+			<label for="Semana">Semana</label>
+			<input type="week" name="Semana" id="Semana">
+			<br>
+			<label for="Archivo">Sube archivo</label>
+			<input type="file" name="Archivo" id="Archivo">
+			<p>Insertaa un archivo porfa</p>
+			<br>
+			<h3>Pasatiempos:Selecciona el tuyo</h3>
+			<input type="checkbox" name="pasat1" id="pasat1"><label for="pasat1">Dibujo</label>
+			<br>
+			<input type="checkbox" name="pasat2" id="pasat2"><label for="pasat2">Escritura</label>
+			<br>
+			<input type="checkbox" name="pasat3" id="pasat3"><label for="pasat3">Escultura</label>
+			<br>
+			<input type="checkbox" name="pasat4" id="pasat4"><label for="pasat4">Composicion musical</label>
+			<br>
+			<br>
+			<label for="color">Elige tu color favorito</label>
+			<input type="color" name="Color">
+			<br>
+			<label for="comentarios">Comentarios:<br></label>
 			<textarea name="comentarios" id="comentarios" rows="10" cols="30"></textarea>
+			<br>
+			<input type="submit" name="envio" id="envio" value="Enviar formulario">
 		</fieldset>
 	</form>
 </body>
