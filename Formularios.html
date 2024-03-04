@@ -35,27 +35,69 @@
 			<label for="Semana">Semana</label>
 			<input type="week" name="Semana" id="Semana">
 			<br>
+			<p>Inserta un archivo porfa</p>
 			<label for="Archivo">Sube archivo</label>
 			<input type="file" name="Archivo" id="Archivo">
-			<p>Insertaa un archivo porfa</p>
 			<br>
+		</fieldset>
+		<fieldset>
+			<legend>Informacion adicional</legend>
 			<h3>Pasatiempos:Selecciona el tuyo</h3>
-			<input type="checkbox" name="pasat1" id="pasat1"><label for="pasat1">Dibujo</label>
+			<input type="checkbox" name="pasat1" id="pasat1">
+			<label for="pasat1">Dibujo</label>
 			<br>
-			<input type="checkbox" name="pasat2" id="pasat2"><label for="pasat2">Escritura</label>
+			<input type="checkbox" name="pasat2" id="pasat2">
+			<label for="pasat2">Escritura</label>
 			<br>
-			<input type="checkbox" name="pasat3" id="pasat3"><label for="pasat3">Escultura</label>
+			<input type="checkbox" name="pasat3" id="pasat3">
+			<label for="pasat3">Escultura</label>
 			<br>
-			<input type="checkbox" name="pasat4" id="pasat4"><label for="pasat4">Composicion musical</label>
+			<input type="checkbox" name="pasat4" id="pasat4" checked="">
+			<label for="pasat4">Composicion musical</label>
 			<br>
 			<br>
 			<label for="color">Elige tu color favorito</label>
 			<input type="color" name="Color">
 			<br>
+			<input type="radio" name="genero" id="genero">
+			<label for="genero">Femenino</label>
+			<input type="radio" name="genero" id="genero">
+			<label for="genero">Masculino</label>
+			<br>
+			<label>Indica tu semestre</label>
+			<select for="semestre" id="semestre" multiple="" size="3">
+				<optgroup label="general">
+				<option selected="">1</option>
+				<option>2</option>
+				<option>3</option>
+				</optgroup>
+				<optgroup label="secundarios">
+				<option>4</option>
+				<option>5</option>
+				</optgroup>
+			</select>
+			<br>
+			<br>
+			<label for="ciudad">Selecciona tu ciudad</label>
+			<input type="text" name="ciudad" id="ciudad" list="ciudades">
+			<datalist id="ciudades">
+				<option>Guadalajara</option>
+				<option>Guanajuato</option>
+				<option>Morelia</option>
+				<option>Matamoros</option>
+				<option>Mazatlán</option>
+				<option>Ciudad de México</option>
+				<option>Ciudad Juárez</option>
+				<option>Colima</option>
+			</datalist>
+			<br>
+			<input type="range" name="califica" id="califica" style="background-color:  red" min="1" max="10" value="7">
+			<br>
 			<label for="comentarios">Comentarios:<br></label>
 			<textarea name="comentarios" id="comentarios" rows="10" cols="30"></textarea>
 			<br>
 			<input type="submit" name="envio" id="envio" value="Enviar formulario">
+			<input type="reset" name="borrar" id="borrar" value="borrar formulario">
 		</fieldset>
 	</form>
 </body>
