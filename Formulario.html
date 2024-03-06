@@ -10,29 +10,131 @@
     <header>
         <h1 align="center">Venta en linea</h1>
     </header>
-    <form action="" method="post" enctype="text/plain">
-        <fieldset>
+    <form action="" method="post" enctype="text/plain" style="background-color: lightcyan;">
+        <center><fieldset>
             <legend>Información general</legend>
-
-            <table style="border: 2px solid black; background-color: lightcyan;">
+            <table >
                 <thead>
                 <tr>
                     <td>
-                        <label for="Nombre">Nombre:</label>
-                        <input type="text" name="Nombre" id="Nombre" maxlength="25" placeholder="Nombre" title="Nombre">
+                        <label for="Nombre">Nombre</label>
+                        <br>
+                        <input type="text" name="Nombre" id="Nombre" maxlength="25"
+                               placeholder="Nombre" title="Nombre" required>
+                    </td>
+                    <td>
+                        <label for="Apellido paterno">Apellido paterno</label>
+                        <br>
+                        <input type="text" name="Apellido paterno" id="Apellido paterno" maxlength="25"
+                               placeholder="Apellido paterno" title="Apellido paterno">
+                    </td>
+                    <td>
+                        <label for="Apellido materno">Apellido materno</label>
+                        <br>
+                        <input type="text" name="Apellido materno" id="Apellido materno" maxlength="25"
+                               placeholder="Apellido materno" title="Apellido materno">
                     </td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
-                        <label for="Nombre">Nombre:</label>
-                        <input type="text" name="Nombre" id="Nombre" maxlength="25" placeholder="Nombre" title="Nombre">
+                        <label for="Nombre de usuario">Nombre de usuario</label>
+                        <br>
+                        <input type="text" name="Nombre de usuario" id="Nombre de usuario" maxlength="25"
+                               placeholder="Usuario" title="Usuario" required>
+                    </td>
+                    <td>
+                        <label for="Contraseña">Contraseña</label>
+                        <br>
+                        <input type="password" name="Contraseña" id="Contraseña" maxlength="25"
+                               placeholder="Password" title="Contraseña" required>
+                    </td>
+                    <td>
+                        <label for="Fecha">Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" name="Fecha" id="Fecha" maxlength="25"
+                               title="Fecha">
                     </td>
                 </tr>
                 </tbody>
             </table>
         </fieldset>
+        <fieldset>
+            <legend>Datos de facturación</legend>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <label>País</label>
+                        <br>
+                        <select for="país" id="país" multiple="" size="3">
+                                <option>México</option>
+                                <option>Canadá</option>
+                                <option>E.U.A.</option>
+                                <option>Venezuela</option>
+                                <option>Irlanda</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Ciudad</label>
+                        <br>
+                        <select for="Ciudad" id="Ciudad" multiple="" size="3">
+                            <option>San Luis Potosí</option>
+                            <option>Matehuala</option>
+                            <option>Cd.Valles</option>
+                            <option>Venezuela</option>
+                            <option>Irlanda</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Calle">Apellido materno</label>
+                        <br>
+                        <input type="text" name="Calle" id="Calle" maxlength="25"
+                               placeholder="Calle" title="Calle">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Num">Numero de casa</label>
+                        <br>
+                        <input type="number" name="Casa" id="Num" maxlength="25"
+                               placeholder="Numero exterior" title="Numero de casa">
+                    </td>
+                    <td>
+                        <label for="Colonia">Colonia</label>
+                        <br>
+                        <input type="text" name="Colonia" id="Colonia" maxlength="25"
+                               placeholder="Colonia" title="Colonia">
+                    </td>
+                    <td>
+                        <label for="mail">E-mail</label>
+                        <br>
+                        <input type="email" name="mail" id="mail" maxlength="25"
+                               placeholder="E-mail" title="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="R.F.C.">R.F.C.</label>
+                        <br>
+                        <input type="text" name="RFC" id="R.F.C." maxlength="25"
+                               placeholder="R.F.C." title="RFC" required>
+                    </td>
+                    <td>
+                        <label for="C.P.">C.P.</label>
+                        <br>
+                        <input type="number" name="C.P." id="C.P." maxlength="25"
+                               placeholder="Codigo postal" title="C.P.">
+                    </td>
+                    <td>
+                        <input type="submit" name="enviar" id="enviar" value="Enviar">
+                        <input type="reset" name="borrar" id="borrar" value="Restablecer">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset></center>
     </form>
 
 </body>
