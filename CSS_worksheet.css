@@ -1,6 +1,19 @@
+/*Aplicacion general*/
+/*Nota: puedes usar hasta 4 diferentes margenes diferentes en margin*/
+*{
+	margin: 5px 10px;
+}
+/*Aplicacion al cuerpo de la pagina*/
 body{
 	background-color: black;
+	background-image: url("Web/Imagenes/Take a Break.jpg");
+	background-repeat: no-repeat;
+/*Si quieres tu imagen en algun lugar usa*/
+/*background-position: right/left top; o right/left buttom*/
+	background-size: 100%;
+	background-attachment: fixed;
 }
+/*Aplicacion directa a un tag en html*/
 h1{
 	text-align: center;
 	font-size: 48px;
@@ -17,22 +30,50 @@ h3{
 	text-align: right;
 	font-size: 18px;
 	font-family: arial;
-	color: white;
+	color: lightgrey;
 }
 h4{
 	text-align: right;
 	font-size: 14px;
-	font-family: arial;
+	font-family: verdana;
 	color: white;
 }
-h3{
+/*Si comparten propiedades pueden ser listados a la vez*/
+h5,h6{
 	text-align: right;
 	font-family: arial;
 	color: white;
 }
+/*Cualquier etiqueta editable puede ser modificada aqui*/
 p{
 	text-align: center;
 	font-size: 10px;
 	font-family: arial;
 	color: white;
+}
+li{
+	text-align: left;
+	font-family: arial;
+	color: white;
+}
+blockquote{
+	text-align: left;
+	font-family: arial;
+	color: white;
+}
+/*Aplicacion directa a un indicador id en html*/
+#titulo1{
+	color: black;
+	background-color: #CCFFB3;
+	opacity: .5;
+}
+/*Tambien pueden listarse seguidas*/
+#Variaciones,#anidadas,#Desordenadas,#Ordenadas{
+	color: black;
+	background-color: #CCFFB3;
+}
+
+.asign{
+	color: #000099;
+	background-color: #dfe7f7;
 }
