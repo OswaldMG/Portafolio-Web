@@ -19,18 +19,23 @@ h1{
 	font-size: 48px;
 	font-family: times new roman;
 	color: white;
+	border: dotted 5px;
 }
 h2{
 	text-align: center;
 	font-size: 24px;
 	font-family: verdana;
 	color: white;
+
 }
 h3{
 	text-align: right;
 	font-size: 18px;
 	font-family: arial;
 	color: lightgrey;
+	border:outset;
+	border-color: rgb(230,0,38);
+	border-width: medium;
 }
 h4{
 	text-align: right;
@@ -43,6 +48,9 @@ h5,h6{
 	text-align: right;
 	font-family: arial;
 	color: white;
+	border:outset;
+	border-color: #FFFF00;
+	border-width: medium;
 }
 /*Cualquier etiqueta editable puede ser modificada aqui*/
 p{
@@ -55,11 +63,18 @@ li{
 	text-align: left;
 	font-family: arial;
 	color: white;
+	border:dashed;
+	border-color: hsl(290,50%,45%);
+	border-width: medium;
 }
 blockquote{
 	text-align: left;
 	font-family: arial;
 	color: white;
+	border:solid;
+	border-color: hsl(189,60%,40%);
+	border-radius: 10px;
+
 }
 /*Aplicacion directa a un indicador id en html*/
 #titulo1{
@@ -71,7 +86,32 @@ blockquote{
 #Variaciones,#anidadas,#Desordenadas,#Ordenadas{
 	color: black;
 	background-color: #CCFFB3;
+	border: groove 5px;
+	border-color: #99CCFF;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
+#Variaciones,#anidadas,#Desordenadas,#Ordenadas{
+	color: black;
+	background-color: #CCFFB3;
+	border: groove 5px;
+	border-color: #99CCFF;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+table{
+	width: 90%;
+	border:solid 3px;
+	border-color: blue;
+	padding: 10px
+}
+th{
+	color: white;
+}
+td{
+	color: white;
+}
+
 
 .asign{
 	color: #000099;
