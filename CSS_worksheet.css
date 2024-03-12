@@ -101,9 +101,12 @@ blockquote{
 }
 table{
 	width: 90%;
+	/*Espacio a lo ancho*/
+	padding: 10px;
+	/*Espacio a lo largo*/
 	border:solid 3px;
 	border-color: blue;
-	padding: 10px
+	border-radius: 12px;
 }
 th{
 	color: white;
@@ -112,6 +115,19 @@ td{
 	color: white;
 }
 
+#tabla1{
+	width: 90%;
+	/*Espacio a lo ancho*/
+	padding: 10px;
+	border-color: green;
+	border-collapse: collapse;
+	/*Apretuja todo*/
+}
+#recu{
+	border-top: solid 2px;
+	border-bottom: groove 2px;
+	background-color: darkblue;
+}
 
 .asign{
 	color: #000099;
