@@ -133,3 +133,28 @@ td{
 	color: #000099;
 	background-color: #dfe7f7;
 }
+/*Opciones de estilo independientes*/
+a:link{
+	color: blue;
+}
+/*Pseudoclases; Padres, hijos y hermanos*/
+p:nth-child(3){
+	color: #4D0040;
+	font-size: 15px;
+}
+p:nth-child(odd){
+	background-color: #B3FFBF;
+	color: #000000
+}
+p:nth-child(even){
+	background-color: #FFB3BF;
+	color: gray;
+}
+p:last-child{
+	background-color: #BFB3FF;
+	color: #4D1900;
+	border: groove 5px;
+	border-color: #99CCFF;
+	font-style: italic;
+	font-size: 14px;
+}
