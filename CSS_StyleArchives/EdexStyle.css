@@ -1,0 +1,38 @@
+*{
+	color: white;
+}
+#t1{
+	background-color: beige;
+	border-color: brown;
+	border-radius: 10px;
+	-moz-box-shadow: beige 20px 30px;
+	-webkit-box-shadow: beige 20px, 30px;
+	text-align: center;
+}
+#t1c{
+	color: black;
+}
+#t2{
+	background-color: orange;
+	border: 5px solid red;
+	box-shadow: rgb(128,106,0) 20px 30px;
+	box-shadow: -moz-rgb(128,106,0) 20px 30px;
+	box-shadow: -webkit-rgba(153,102,0,3) 20px, 30px;
+	text-align: center;
+}
+#t3{
+	font: verdana, 20px;
+	background-color: beige;
+	border-color: brown;
+	text-shadow: brown -20px 20px;
+	text-shadow: -moz-brown -20px 20px;
+	text-shadow: -webkit-grey -20px 20px;
+	text-align: center;
+}
+#t4{
+	border: 5px solid brown;
+	text-align: center;
+	background: linear-gradient(top,white,brown);
+	background: -moz-linear-gradient(top,white,brown);
+	background: -webkit-linear-gradient(top,white,brown);
+}
