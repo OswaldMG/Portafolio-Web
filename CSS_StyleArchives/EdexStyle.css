@@ -9,7 +9,7 @@
 	-webkit-box-shadow: beige 20px, 30px;
 	text-align: center;
 }
-#t1c{
+#t1c,#t3c,#t5c{
 	color: black;
 }
 #t2{
@@ -21,6 +21,7 @@
 	text-align: center;
 }
 #t3{
+	height: 44px;
 	font: verdana, 20px;
 	background-color: beige;
 	border-color: brown;
@@ -32,7 +33,26 @@
 #t4{
 	border: 5px solid brown;
 	text-align: center;
-	background: linear-gradient(top,white,brown);
-	background: -moz-linear-gradient(top,white,brown);
-	background: -webkit-linear-gradient(top,white,brown);
+	background: linear-gradient(top,white 10%,brown 80%);
+	background: -moz-linear-gradient(top,white 10%,brown 80%);
+	background: -webkit-linear-gradient(top,white 10%,brown 80%);
 }
+#t5{
+	border: 5px solid brown;
+	text-align: center;
+	background: radial-gradient(top, circle ,white 10%,brown 15%);
+	background: -moz-radial-gradient(top, circle,white 10%,brown 15%);
+	background: -webkit-radial-gradient(top, circle,white 10%,brown 15%);
+}
+#t6{
+	border: 4px solid red;
+	text-align: center;
+	transform: scale(-4,2);
+}
+#t6c{color: hsla(120,80%,25%,.6);}
+
+#t6:hover{
+	text-align: center;
+	transform: scale(3,3);
+}
+#t6c:hover{color: rgba(200,200,45,.9);}

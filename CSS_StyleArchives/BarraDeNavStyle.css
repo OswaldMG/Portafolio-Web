@@ -1,0 +1,30 @@
+*{
+	margin-top: 0;/*No quede espacio en la parte superior*/
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: lightblue;
+	position: fixed; 
+	/*Permite que la barra se mantenga presente en la pantalla aunque te desplaces*/
+	width: 100%;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 12px;
+}
+.activo{
+	background-color: blue;
+	color: lightgrey;
+}
+li a:hover:not(activo){
+	background-color: blue;
+	color: lightgray;
+}

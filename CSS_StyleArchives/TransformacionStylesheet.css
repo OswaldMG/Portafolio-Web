@@ -1,0 +1,40 @@
+﻿.Practica {
+    background-color: darkorange;
+    padding: .4px 5px 24px 5px;
+    text-align: center;
+    font-size: 25px;
+    width: 40%;
+    height: 48px;
+    margin-inline: auto;
+    border: 25px darkorange;
+    border-radius: 22px 22px 22px 22px;
+}
+.Practica a{
+    color:ghostwhite;
+    text-decoration: none;
+}
+.Practica a:visited {
+    color:gray;
+    text-decoration: none;
+}
+.Practica:not(.Practica a) {
+    background-color: lawngreen;
+    box-shadow: 9px 9px 0px -3px;
+}
+.Practica a:hover {
+    color: gray;
+    text-decoration: none;
+}
+.Practica:hover {
+    transform: skew(-10deg, 0deg);
+    background-color: #000099;
+    color: lightgray;
+}
+
+/*LoVe Fears HAte*/
+/*a {}
+a:link {}
+a:visited {}
+a:focus {}
+a:hover {}
+a:active {}*/
