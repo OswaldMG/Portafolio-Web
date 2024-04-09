@@ -1,0 +1,90 @@
+*{
+	margin: 6px 15px 0px 15px;
+}
+#logo{
+	font-size: 2rem;
+	font-style: italic;
+	margin-left: 4%;
+	margin-top: 4%;
+}
+.contm{
+	margin-left: 6%;
+	margin-right: 6%;
+}
+.menu{
+	float: left;
+	list-style-type: none;
+	overflow: hidden;
+	color: white;
+	font-size: 1.2rem;
+	font-family: "Arial";
+	font-style: italic;
+	background-color: #0066CC;
+	width: 18%;
+	width: min(100% - 48px,200px);
+	text-align: center;
+	margin-right: .1%;
+	margin-left: .1%;
+	padding: 7px 5px 16px 5px;
+}
+#Prince{
+	background-color: #66E6FF;
+	color: whitesmoke;
+}
+.menu:hover{
+	background-color: #66E6FF;
+	color: whitesmoke;
+}
+.cont2{
+	box-sizing: content-box;
+	display: inline-flex;
+	gap: 30px;
+}
+.izq{
+	font-family: Arial;
+	font-size: 0.96rem;
+	text-align: justify;
+	margin-left: 8%;
+	margin-right: 75px;
+	width: 52%;
+}
+.der{
+	margin-right: 9%;
+	width: 30%;
+}
+#title{
+	background-color: #0066CC;
+	color: white;
+	font-family: Arial;
+	font-style: italic;
+	text-align: center;
+	height: min(20% - 25px, 35px);
+	width: max(85% - 90px, 120px);
+	padding-top: 15px;
+}
+#user,#pase{
+	display: block;
+	height: 30px;
+	width: min(100% - 25px, 200px);
+	padding-left: 10px;
+	margin: 15px 0px 15px 0px;
+	border-bottom-color: grey;
+}
+#send{
+	display: block;
+	background-color: #66E6FF;
+	height: 45px;
+	width: max(90% - 78px, 180px);
+	transform: translate(-8%);
+	border: none;
+}
+.foot{
+	width: 98%;
+	text-align: center;
+	color: white;
+	background-color: #0066CC;
+	position: fixed;
+	top: 92%;
+	left: 49.5%;
+	transform: translate(-50%,-30%);
+}
