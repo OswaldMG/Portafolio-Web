@@ -9,7 +9,7 @@ alert("La suma es "+suma);
 var suma=parseFloat(num1)+parseFloat(num2);
 alert("La suma es "+suma);
 
-/*var cadena=prompt("Escribe una cadena");*/
+var cadena=prompt("Escribe una cadena");
 /*Te devuelve la cantidad de caracteres que tiene una cadena(texto)*/
 var longitud=cadena.length;
 alert("La longitud de tu nombre es: "+longitud);
@@ -26,3 +26,8 @@ alert("Cadena en minusculas menores: "+cadena2);
 cadena2=cadena.charAt(1);
 alert("El caracter de la semana es: "+cadena2);
 /**/
+function poschar(){
+	var n1=document.getElementById("cadena").value;
+	var char=cadena.indexOf('o');
+	alert(char);
+}
