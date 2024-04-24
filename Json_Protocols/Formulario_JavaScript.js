@@ -3,8 +3,8 @@ function evalua(){
 	var cadena=document.getElementById("name").value;
 	cadenaUp=cadena.toUpperCase();
 	cadenaLow=cadena.toLowerCase();
-	var large=cadena.length;
-	var prueba=0;
+	/*var large=cadena.length;
+	var prueba=0;*/
 
 	if (cadena==cadenaUp) {
 		var txt=prefix+cadena.concat(" contiene solamente mayúsculas");
