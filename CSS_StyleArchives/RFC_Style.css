@@ -1,0 +1,45 @@
+*{
+    margin: auto;
+}
+.encabezado{
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    padding: 25px 50px 25px 50px;
+}
+.caja{
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.texto{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    width: max(50% - 100px, 200px);
+}
+.cajon{
+    background-color: rgb(210,40,80);
+    text-align: center;
+    width: max(50% - 100px, 200px);
+    height: 30px;;
+    border-radius: 5px;
+    border: none;
+}
+.caja_texto{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    width: max(50% - 100px, 200px);
+    height: 30px;
+}
+#boton{
+    background-color: rgb(100,190,100);
+    text-align: center;
+    width: max(50% - 100px, 200px);
+    height: 30px;;
+    border-radius: 5px;
+    border: none;
+}

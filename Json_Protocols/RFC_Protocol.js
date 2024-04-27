@@ -1,16 +1,18 @@
 function genera_rfc(){
-    var SurP=document.getElementById("cadena2").value;
-    var SurM=document.getElementById("cadena3").value;
-    var name=document.getElementById("cadena").value;
-    var year=document.getElementById("year").value;
-    var month=document.getElementById("month").value;
-    var day=document.getElementById("day").value;
-
-    first=SurP.charAt(0)+SurP.charAt(1);
-    second=SurM.charAt(0);
-    third=name.charAt(0);
- //   fourth=year.split("year,2");
- //   last=month.concat(day);
-    var texto=(first+second+third).value;
-    document.getElementById("r").innerHTML=texto;
+     SurP=document.getElementById("paterno").value;
+     SurP2=SurP.charAt(0);
+     SurP3=SurP.charAt(1);
+    SurP4=SurP3.toUpperCase();
+    SurM=document.getElementById("materno").value;
+    SurM2=SurM.charAt(0);
+    Nom=document.getElementById("nombre").value;
+    Nom2=Nom.charAt(0);
+    var anio=document.getElementById("anio").value;
+    yearA=anio.charAt(2);
+    yearB=anio.charAt(3);
+    yearT=yearA+yearB;
+    mes=document.getElementById("mes").value;
+    dia=document.getElementById("dia").value;
+    txt=SurP2+SurP4+SurM2+Nom2+yearT+mes+dia;
+    document.getElementById("resultado").innerHTML=txt;
 }
