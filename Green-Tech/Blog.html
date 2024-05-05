@@ -7,20 +7,35 @@
     <meta name="Alexs OMG" content="ProyectWeb_BigScale">
     <link rel="icon" type="image/png" href="index_archives/Icons/Logo.png">
     <link rel="stylesheet" type="text/css" href="StyleDataSheets/Footer.css">
-    <link rel="stylesheet" type="text/css" href="StyleDatasheets/Display-Menu.css">
+    <link rel="stylesheet" type="text/css" href="StyleDatasheets/NewMenu.css">
 </head>
 <body>
 <header><!--Titular-->
-    <nav>
-        <input type="checkbox" id="menu">
-        <label for="menu"> ☰ </label>
-        <ul id="seleccion">
-            <li id="opciones"><a href="prince.html">Pagina Principal</a></li>
-            <li id="opciones"><a href="Actual.html">Situacion Actual</a></li>
-            <li id="opciones"><a href="Blog.html">Blog</a></li>
-            <li id="opciones"><a href="Ayuda.html">Ayuda</a></li>
-        </ul>
-    </nav>
+    <div id="header">
+        <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+            <ul class="nav">
+                <li><a href="prince.html">Inicio</a></li>
+                <li><a href="Actual.html">Situacion actual</a></li>
+                <li><a href="Blog.html">Blog y Comunidad</a>
+                    <ul>
+                        <li><a href="">Submenu1</a></li>
+                        <li><a href="">Submenu2</a></li>
+                        <li><a href="">Submenu3</a></li>
+                        <li><a href="">Submenu4</a></li>
+                    </ul>
+                </li>
+                <li><a href="Ayuda.html">Ayuda y Contacto</a>
+                    <ul>
+                        <li><a href="">Submenu1</a></li>
+                        <li><a href="">Submenu2</a></li>
+                        <li><a href="">Submenu3</a></li>
+                        <li><a href="">Submenu4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
+    <br><br><br>
     <h1 id="Entrada">Prince index</h1>
 
 </header>
@@ -57,17 +72,17 @@
 
     </article>
 </aside>
+<br>
+
 <footer><!--Final de pagina, pon redes contactos y una guia de las paginas de forma resumida-->
-    <div class="Direct">
-        <h3>Directorio de paginas</h3>
-        <h4>Pagina princpipal</h4>
-        <h4>Situacion actual</h4>
-        <h4>Blog</h4>
-        <h4>Ayuda</h4>
+    <h3 class="ftitle">Pagina sin fines de lucro. Toda la informacion recolectada corresponde a sus respectivos autores.</h3>
+    <div class="foot">
+    <h3 class="titleContact">Contactos</h3>
+    <h3 class="titlePagInt">Paginas De Interes</h3>
     </div>
+    <div class="foot2">
     <div class="Contact">
-        <h3>Contactos</h3>
-        <h4>Encuesta De Satisfaccion</h4>
+        <h4>Encuesta De Satisfaccion</h4><br>
         <h4>Redes Sociales</h4>
         <img src="index_archives/Icons/x.png" id="x" usemap="#social">
         <img src="index_archives/Icons/facebook.png" id="fb" usemap="#facebook">
@@ -75,15 +90,19 @@
         <img src="index_archives/Icons/instagram.png" id="inst" usemap="#insta">
     </div>
     <div class="PagRel">
-        <h3>Paginas De Interes</h3>
-        <h4><a href="https://www.netguru.com/blog/what-is-greentech#:~:text=Green%20tech%20is%20the%20use,towards%20a%20more%20sustainable%20future">What Is Green Tech?</a></h4>
-        <h4><a href="https://www.opentrends.net/es/articulo/ejemplos-reales-de-green-technology#:~:text=El%20término%20Green%20Technology%20hace,de%20habitabilidad%20de%20nuestro%20planeta">EJEMPLOS REALES DE GREEN TECHNOLOGY</a></h4>
-        <h4><a href="https://www.investopedia.com/terms/g/green_tech.asp">How It Works, Types, Adoption, and Examples</a></h4>
+        <h4>
+            <a style="text-decoration: none; color: #9DB6FF;"
+               href="https://www.netguru.com/blog/what-is-greentech#:~:text=Green%20tech%20is%20the%20use,towards%20a%20more%20sustainable%20future">
+                What Is Green Tech?</a></h4>
+        <h4>
+            <a style="text-decoration: none; color:#9DB6FF;"
+               href="https://www.opentrends.net/es/articulo/ejemplos-reales-de-green-technology#:~:text=El%20término%20Green%20Technology%20hace,de%20habitabilidad%20de%20nuestro%20planeta">
+                EJEMPLOS REALES DE GREEN TECHNOLOGY</a></h4><br>
+        <h4>
+            <a style="text-decoration: none; color:#9DB6FF;"
+               href="https://www.investopedia.com/terms/g/green_tech.asp">
+                How It Works, Types, Adoption, and Examples</a></h4><br>
     </div>
-    <div class="Help">
-        <h3>Ayuda</h3>
-        <h4>Chat Online</h4>
-        <img src="index_archives/Icons/whatsapp.png" id="whats" usemap="#whats">
     </div>
     <map name="social">
         <area shape="circle" coords="1,1,100,100" href="https://twitter.com/home?lang=en">
@@ -97,10 +116,6 @@
     <map name="#insta">
         <area shape="circle" coords="1,1,100,100" href="https://www.instagram.com">
     </map>
-    <map name="#whats">
-        <area shape="circle" coords="1,1,100,100" href="https://business.whatsapp.com">
-    </map>
 </footer>
-
 </body>
 </html>

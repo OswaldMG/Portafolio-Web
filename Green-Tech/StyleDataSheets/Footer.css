@@ -1,25 +1,48 @@
-
 footer{
+    color: rgb(245,245,245);
     background-color: #168a22;
-    width: max(99.25% - 1px, 20px);
-    border: #168a22;
-    margin: auto;
-    padding-left: 26px;
-    transform: translate(-0.5%,55.8%);
-    display: flex;/*Sirve para acomodar contenido de un div*/
-    gap: min(28% - 70px, 180px); /*Crea un espacio entre el contenido del div, es responsivo al tamano de la pagina*/
-}
-.Direct{text-align: center;font-size: 1rem;font-family: Calibri;}
-.Direct h3{text-align: center;font-size: 1.5rem;font-family: "Arial Black";}
-.Contact{text-align: center;font-size: 1rem;font-family: Calibri;}
-.Contact h3{text-align: center;font-size: 1.5rem;font-family: "Arial Black";}
-.PagRel{text-align: center;font-size: 1rem;font-family: Calibri;}
-.PagRel h3{text-align: center;font-size: 1.5rem;font-family: "Arial Black";}
-.Help{text-align: center;font-size: 1rem;font-family: Calibri;}
-.Help h3{text-align: center;font-size: 1.5rem;font-family: "Arial Black";}
+    padding: 25px;
+    transform: translate(0%,155.7%);
+/*
+    width: max(99% - 14px, 90px);
+    padding-bottom: 25px;
+    padding-left: 36px;
 
-#whats{height: 48px;
-    width: 48px;}
+    display: flex;/*Sirve para acomodar contenido de un div*/
+/*    gap: min(60% - 175px, 315px); /*Crea un espacio entre el contenido del div, es responsivo al tamano de la pagina*/
+}
+.ftitle{text-align: center;font-size: 25px}
+.foot{
+    display: flex;
+    justify-content: center;
+    gap: max(25% - 5px, 100px);
+    margin-right: min(10% - 0px, 0px);
+}
+.titleContact{font-size:max(20% - 1px, 30px);}
+.titlePagInt{font-size: max(20% - 1px, 30px);}
+.foot2{display: flex;justify-content: center;}
+.Contact{
+    text-align: center;
+    font-size: 1rem;
+    font-family: Calibri;
+    height: 40%;
+}
+.Contact h3{text-align: center;font-size: 1.5rem;font-family: "Arial Black";}
+.PagRel{
+    text-align: center;
+    font-size: 1rem;
+    font-family: Calibri;
+    margin-left: 20%;
+}
+.PagRel h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Arial Black";
+}
+.PagRel h4{color: black;}
+
+/*#whats{height: 48px;
+    width: 48px;}*/
 #x{height: 48px;
     width: 48px;}
 #fb{height: 48px;

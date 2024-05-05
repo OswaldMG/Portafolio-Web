@@ -1,0 +1,38 @@
+*{gap: 15px;}
+#cajaformulario{
+float: left;
+padding: 50px;
+    margin-left: 16%;
+border: 1px solid #999999;
+    background: #ffe29e;
+    width: min(30% - 15px,200px);
+}
+#cajadatos{
+float: left;
+width: min(60% - 0px,1000px);
+    width: max(40% - 300px,640px);
+margin-left: 20px;
+padding: 20px;
+border: 1px solid #999999;
+    background: burlywood;
+}
+#clave, #texto{
+width: 200px;
+    height: 30px;
+    background: white;
+}
+#grabar,#eliminar{
+    background: white;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    margin: 15px 0px 15px 0px;
+    border: none;
+}
+#grabar:hover, #eliminar:hover{
+    background-color: lightslategray;
+}
+#cajadatos > div{
+padding: 5px;
+border-bottom: 1px solid #999999;
+}

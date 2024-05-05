@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="StyleDataSheets/estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script type="text/javascript" src="APIS-OTS/js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="APIS-OTS/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="APIS-OTS/jspdf.js"></script>
+	<script type="text/javascript" src="APIS-OTS/jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="APIS-OTS/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="APIS-OTS/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="APIS-OTS/jspdf.plugin.from_html.js"></script>	
+</head>
+<script>
+var total;
+function califica()
+    {var total=0;
+    	//Evalua cada pregunta
+    	for (var x=1;x<=4;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+function generar(){
+
+//Crear un objeto o instancia jsPDF
+var doc = new jsPDF();
+
+//Definir el tamaño de la letra
+doc.setFontSize(40);
+//Color del texto
+doc.setTextColor(9,7,121);
+doc.text(40, 20, "Conceptos basicos");
+doc.setTextColor(17, 122, 209); //Color en formato RGB
+doc.setFontSize(30);
+doc.text(50, 35, "Resultados del test"); //Ubicación, Texto
+doc.setTextColor(0,0,0);
+doc.setFontSize(10);
+doc.text(20, 50, "20 puntos. Muy bien. \r Todas tus respuestas son correctas");
+doc.text(20, 70, "15 puntos. Regular. \r Obtuviste 3 preguntas correctas");
+doc.text(20, 90, "0 puntos. \r Todas tus respuestas son incorrectas");
+
+//doc.addImage(imgData, 'JPEG', 10, 40, 180, 180);
+
+var string = doc.output('datauristring');
+
+$('iframe').attr('src', string);
+
+}
+</script>
+
+<body>
+    <div id="contiene">
+	<h1 class="titulos" id="prince">Responde la encuesta</h1>
+	<h2 class="titulos" id="sub">Tu opinión es importante</h2>
+<div id="sub-contiene">
+	<form>
+	<ul>
+		<li>¿Que son las Green-Technologies</li>
+		<input type="radio" name="r1" id="r1" value="0"/>
+		Referencia una practica ecologica<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>
+		Trata de tecnologias basadas en el medio-ambiente<br/>
+		<input type="radio" name="r1" id="r1" value="5"/>
+		Son aquellas tecnologias sostenibles y amigables con el ambiente<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>
+		Son tecnicas para reducir la huella de carbono<br/>
+		<br>
+		<li>Principales caracteristicas de las Green-Tech</li>
+		<input type="radio" name="r2" id="r2" value="0"/>
+		Son tecnologias hechas de materia prima<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>
+		Son tecnologias baratas, desechables y verdes<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>
+		Utilizan hidrocarburos y gases naturales para funcionar<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>
+		Son tecnologias sustentables y amigables con el ambiente<br/>
+		<br>
+		<li>¿Que paises son los 4 principales productores de Green-Tech?</li>
+		<input type="radio" name="r3" id="r3" value="5"/>
+		Suecia, Noruega, Dinamarca y Suiza<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>
+		Estados Unidos, Canada, Reino Unido y España<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>
+		Alemania, Marruecos, Australia, Japon<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>
+		México, Alaska, Rusia y Argentina<br/>
+		<br>
+        <li>Ejemplos de Green-Technologies</li>
+		<input type="radio" name="r4" id="r4" value="0"/>
+		Plantas de energia en base de carbon<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>
+		Turbinas de viento, paneles solares y baterias solares<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>
+		Motor de disel, bolsa de plastico y utencilios desechables<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>
+		Computadors, celulares, aviones<br/>
+		<br>
+		<li>¿En que año empezaron las tecnologias verdes en forma?</li>
+		<input type="radio" name="r5" id="r5" value="0"/>
+		1989<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>
+		2008<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>
+		1674<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>
+		1980<br/>
+	</ul>
+</form>
+</div>
+<input type="button" value="Calificar" class="boton" onclick="califica()">
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<input type="button" onclick="generar()" class="boton" value="Ver resultados"/> <br/>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
