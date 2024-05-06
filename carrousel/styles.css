@@ -1,0 +1,40 @@
+.carousel {/*La clase carousel*/
+  position: relative;
+  /*La desprende de la pagina para que se desplaze deacuerdo a la pagina*/
+  max-width: 600px;
+  /*Indica el ancho maximo que puede tener el contenedor*/
+  margin: auto;
+  /*Ajusta la propiedad margin de forma automatica de acuerdo a la pagina y su tamaño*/
+  overflow: hidden;
+  /*Controla los elementos que sobrepasen el contenedor*/
+}
+.carousel-content {/*La clase carousel-content*/
+  display: flex;
+}
+.carousel-content img {/*Las imagenes dentro de la clase carousel-content*/
+  width: 100%;/*El ancho relativo al contenedor en un 100%*/
+  display: none;/*Estilo de presentacion, no se muestran*/
+}
+.carousel-content img.active {
+  /*Las imagenes dentro de la clase carousel-content cuando se le aplique la propiedad active*/
+  display: block;/*Las imagenes se muestran con un estilo de bloque*/
+}
+
+button {/*El boton*/
+  position: absolute;/*Su posicion es absoluta e inamovible*/
+  top: 50%;/*Especifica el desplazamiento vertical de su posicion por defecto*/
+  transform: translateY(-50%);/*Se deplaza en el eje Y de la pagina*/
+  background: rgba(0, 0, 0, 0.5);/*El color de fondo y su transparencia*/
+  color: white;/*El color del objeto*/
+  border: none;/*No tiene borde*/
+  padding: 10px;/*La propiedad paddin tiene un aumento de 10 pixeles*/
+  cursor: pointer;/*la apariencia del cursor*/
+}
+#prevBtn {/*El identificador del boton izquierdo*/
+  left: 0;/*La posicion respecto a la izquiera*/
+}
+
+#nextBtn {/*El identificador del boton derecha*/
+  right: 0;/*La posicion respecto a la derecha*/
+}
+
