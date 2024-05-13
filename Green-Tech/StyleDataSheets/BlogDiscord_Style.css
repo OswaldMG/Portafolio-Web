@@ -1,0 +1,46 @@
+*{background-color: #ffe29e}
+#banner{
+    width: 100%;
+}
+.organizador{
+    width: 100%;
+    padding: 0px;
+    border: none;
+}
+.main{
+    width: 100%;
+    margin-top: 0px;
+}
+#cajadatos{
+    padding: 16px;
+    background: burlywood;
+}
+#cajaformulario{
+    display: block;
+    padding: 50px;
+    border: none;
+    background: #ffe29e;
+    width: min(30% - 15px,200px);
+}
+.chat{
+    width: auto;
+}
+#clave, #texto{
+    width: 200px;
+    height: 30px;
+    background: white;
+}
+#grabar,#eliminar{
+    background: white;
+    padding: 20px;
+    width: 250%;
+    margin: 10px 0px 10px 5px;
+    border: none;
+}
+#grabar:hover, #eliminar:hover{
+    background-color: limegreen;
+}
+#cajadatos > div{
+    padding: 5px;
+    border-bottom: 1px solid #999999;
+}

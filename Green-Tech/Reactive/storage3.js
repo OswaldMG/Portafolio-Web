@@ -23,7 +23,6 @@ cajadatos.innerHTML+='<div>'+clave+' - '+valor+'</div>';
 window.addEventListener('load', iniciar, false);
 function elimina()
 {
-
 	if(confirm('Está Seguro?')){
 		localStorage.clear();
 		mostrar();

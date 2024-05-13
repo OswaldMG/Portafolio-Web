@@ -2,20 +2,18 @@
 #banner{
     width: 100%;
 }
-#banMes{
-    position: relative;
-    bottom: -350px;
-    background: none;
-    color: #bc2e1e;
-    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
-    color: #bc2e1e;
+.organizador{
+    width: 100%;
+    padding: 0px;
+    border: 2px solid #0f940f;
 }
-.contain{
-    width: 50%;
+.main{
+    width: 100%;
+    margin-top: 0px;
 }
-.chat{
-    position: marker;
-    transform: translate(1080px,-200px);
+#cajadatos{
+    padding: 16px;
+    background: burlywood;
 }
 #cajaformulario{
     display: block;
@@ -24,14 +22,8 @@
     background: #ffe29e;
     width: min(30% - 15px,200px);
 }
-#cajadatos{
-    display: block;
-    width: min(60% - 0px,1000px);
-    width: max(40% - 300px,240px);
-    margin-left: 20px;
-    padding: 20px;
-    border: 1px solid #999999;
-    background: burlywood;
+.chat{
+    width: auto;
 }
 #clave, #texto{
     width: 200px;
@@ -40,13 +32,13 @@
 }
 #grabar,#eliminar{
     background: white;
-    height: 30px;
-    width: 110%;
-    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    width: 50%;
+    margin: 10px 0px 10px 5px;
     border: none;
 }
 #grabar:hover, #eliminar:hover{
-    background-color: lightslategray;
+    background-color: limegreen;
 }
 #cajadatos > div{
     padding: 5px;
