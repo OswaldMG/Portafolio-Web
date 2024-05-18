@@ -1,0 +1,40 @@
+body{
+    background-color: #cccccc;
+    margin: 10px;
+}
+#Titulo{text-align: center}
+#Subtitulo{text-align: center}
+.conteiner{
+    background-color: #ffe29e;
+    width: min(100% - 20px, 250px);
+    border-radius: 10px;
+    padding: 50px 40% 50px 40%;
+    margin: 10px 0% 10px 2%;
+}
+#name{
+    /*display: block;*/
+    background-color: #ffe29e;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    margin: 15px 0px 15px 0px;
+    border: none;
+}
+#name:hover{
+    background-color: white;
+}
+#envio{
+    height: 30px;
+    background-color: pink;
+    width: 100%;
+    padding-left: 10px;
+    margin: 15px 0px 15px 0px;
+    border: none;
+}
+#envio:hover{
+    background-color: salmon;
+}
+#resultado{
+    font-family: Broadway;
+    font-size: 2.1rem;
+}

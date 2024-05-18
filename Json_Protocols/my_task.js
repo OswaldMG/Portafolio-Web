@@ -1,5 +1,4 @@
 let w;
-
 function startWorker() {
     if (typeof(w) == "undefined") {
         w = new Worker("demo_workers.js");

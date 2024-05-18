@@ -1,7 +1,7 @@
 function genera_rfc(){
-     SurP=document.getElementById("paterno").value;
-     SurP2=SurP.charAt(0);
-     SurP3=SurP.charAt(1);
+    SurP=document.getElementById("paterno").value;
+    SurP2=SurP.charAt(0);
+    SurP3=SurP.charAt(1);
     SurP4=SurP3.toUpperCase();
     SurM=document.getElementById("materno").value;
     SurM2=SurM.charAt(0);
