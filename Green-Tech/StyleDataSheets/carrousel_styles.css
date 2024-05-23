@@ -1,0 +1,19 @@
+.carousel {
+  max-width: 600px;
+  margin: auto;
+}
+
+
+.carousel-content {
+  display: block;
+}
+
+.carousel-content img {
+  width: 100%;
+  display: none;
+}
+
+.carousel-content img.active {
+  display: block;
+}
+

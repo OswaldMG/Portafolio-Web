@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Obtener totales del formulario</title>
@@ -51,16 +51,16 @@ var doc = new jsPDF();
 //Definir el tamaño de la letra
 doc.setFontSize(40);
 //Color del texto
-doc.setTextColor(9,7,121);
-doc.text(40, 20, "Conceptos basicos");
+doc.setTextColor(13,0,77);
+doc.text(40, 20, "Test de Conocimientos");
 doc.setTextColor(17, 122, 209); //Color en formato RGB
 doc.setFontSize(30);
 doc.text(50, 35, "Resultados del test"); //Ubicación, Texto
 doc.setTextColor(0,0,0);
 doc.setFontSize(10);
-doc.text(20, 50, "20 puntos. Muy bien. \r Todas tus respuestas son correctas");
-doc.text(20, 70, "15 puntos. Regular. \r Obtuviste 3 preguntas correctas");
-doc.text(20, 90, "0 puntos. \r Todas tus respuestas son incorrectas");
+doc.text(20, 50, "20 puntos. Muy bien. \r Haz aprobado el test");
+doc.text(20, 70, "15 puntos. Bien. \r Un buen resultado, pero puede ser mejor");
+doc.text(20, 90, "0 puntos. Mal. \r Reprobado, no aprendiste nada");
 
 //doc.addImage(imgData, 'JPEG', 10, 40, 180, 180);
 

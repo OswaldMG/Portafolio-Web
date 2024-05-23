@@ -19,18 +19,15 @@
                 <li><a href="Actual.html">Situacion actual</a></li>
                 <li><a href="Blog.html">Blog y Comunidad</a>
                     <ul>
-                        <li><a href="" style="width: 84%";>Submenu1</a></li>
-                        <li><a href="" style="width: 84%";>Submenu2</a></li>
-                        <li><a href="" style="width: 84%";>Submenu3</a></li>
-                        <li><a href="" style="width: 84%";>Submenu4</a></li>
+                        <li><a href="" style="width: 88%";>Noticias Recientes</a></li>
+                        <li><a href="" style="width: 88%";>Memes de la Comunidad</a></li>
                     </ul>
                 </li>
                 <li><a href="Ayuda.html">Ayuda y Contacto</a>
                     <ul>
-                        <li><a href="" style="width: 84%";>Submenu1</a></li>
-                        <li><a href="" style="width: 84%";>Submenu2</a></li>
-                        <li><a href="" style="width: 84%";>Submenu3</a></li>
-                        <li><a href="" style="width: 84%";>Submenu4</a></li>
+                        <li><a href="Preguntas%20frecuentes.html" style="width: 88%";>Preguntas Frecuentes</a></li>
+                        <li><a href="https://green-tech-website.000webhostapp.com" style="width: 88%";>Manda Tu Opinion</a></li>
+                        <li><a href="" style="width: 88%";>Perfil del Administrador</a></li>
                     </ul>
                 </li>
             </ul>
@@ -40,8 +37,9 @@
     <h1 style="text-align: center;">Bienvenido</h1>
 </header>
 <section id="cuerpo" class="Container"><!--Seccion principal-->
-    <h2>Origen</h2>
-    <p>LLas tecnologías verdes tienen su origen en el "Movimiento verde" mundial de los años 60's.
+    <h2 id="titulos">Origen</h2>
+    <br>
+    <p >Las tecnologías verdes tienen su origen en el "Movimiento verde" mundial de los años 60's.
         El término "tecnologías verdes" comenzó a utilizarse por la Agencia de Protección Ambiental
         (EPA) de los Estados Unidos cuando desarrolló el programa Estrella de Energía en 1992.
         <br>
@@ -50,7 +48,32 @@
         internacionales, así como la inversión y el emprendimiento. Estos factores han contribuido
         a la evolución y expansión de las tecnologías verdes en todo el mundo.
     </p>
+    <br>
+    <h2>Bases</h2>
+    <ul style="padding: 25px">
+        <li>
+        <b>Reducir el impacto ambiental:</b> Las tecnologías verdes buscan disminuir la contaminación
+        y el daño al medio ambiente, como reducir las emisiones de gases de efecto invernadero.
+        </li>
+        <li>
+        <b>Uso eficiente de recursos:</b> Estas tecnologías se enfocan en hacer más con menos,
+        optimizando el consumo de energía, agua y materiales.
+        Por ejemplo, el uso de energías renovables como la solar y eólica.
+        </li>
+        <li>
+        <b>Innovación sostenible:</b> Implica el diseño y desarrollo de productos,
+        servicios y procesos innovadores que sean amigables con el medio ambiente.
+        Esto incluye desde soluciones complejas hasta prácticas sencillas como apagar dispositivos
+        electrónicos cuando no se usan.
+        </li>
+        <li>
+        <b>Preservación de recursos naturales:</b> Las tecnologías verdes buscan conservar y proteger los
+        recursos naturales del planeta, como los bosques, océanos y biodiversidad.
+        Esto es clave para enfrentar desafíos como el cambio climático y la escasez de recursos.
+        </li>
+    </ul>
     <h2>Historia</h2>
+    <br>
     <p>
         Durante el siglo XX, la Revolución Verde, iniciada en los países desarrollados y
         extendida globalmente hasta finales de la década de 1980, introdujo tecnologías
@@ -73,6 +96,52 @@
         impactos ambientales negativos en otras áreas, como la extracción de minerales raros
         para dispositivos de energía verde.
     </p>
+    <br>
+    <h2>Importancia</h2>
+    <br>
+    <p>
+        Las tecnologías verdes son esenciales para combatir el crecimiento constante de las emisiones de CO2.
+        El cambio climático, impulsado en gran medida por estas emisiones,
+        es una amenaza real y urgente para nuestro planeta. Las tecnologías verdes,
+        como la energía solar y eólica, los vehículos eléctricos y la captura y almacenamiento
+        de carbono, pueden reducir significativamente nuestras emisiones de gases
+        de efecto invernadero. Al adoptar estas tecnologías, no solo protegemos nuestro
+        medio ambiente, sino que también impulsamos la innovación y creamos empleos en
+        sectores sostenibles. En resumen, las tecnologías verdes son una solución vital
+        para un futuro sostenible y próspero.
+        <b style="font-size: 1.4rem;color: #126e00">¡Actuemos ahora para un mañana más verde! 🌍💚</b>
+    </p>
+    <div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Year', 'CO2'],
+                    ['1850',  0],
+                    ['1900',  4600],
+                    ['1950',  5600],
+                    ['1990',  20500],
+                    ['2020',  37500]
+                ]);
+                var options = {
+                    isStacked: 'absolute',
+                    height: 300,
+                    title: 'Emisiones de dioxido de carbono por año',
+                    hAxis: {title: 'Año',  titleTextStyle: {color: '#333'}},
+                    vAxis: {
+                        minValue: 0,
+                        ticks:[5000,10000,15000,20000,25000,30000,35000,40000]
+                    }
+                };
+                var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+                chart.draw(data, options);}
+        </script>
+        </head>
+        <body>
+        <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    </div>
 </section>
 <section>
     <article><!--Texto-->
@@ -101,7 +170,7 @@
             <h4>
                 <a style="text-decoration: none; color: #9DB6FF;"
                    href="https://www.netguru.com/blog/what-is-greentech#:~:text=Green%20tech%20is%20the%20use,towards%20a%20more%20sustainable%20future">
-                    What Is Green Tech?</a></h4>
+                    What Is Green Tech?</a></h4><br>
             <h4>
                 <a style="text-decoration: none; color:#9DB6FF;"
                    href="https://www.opentrends.net/es/articulo/ejemplos-reales-de-green-technology#:~:text=El%20término%20Green%20Technology%20hace,de%20habitabilidad%20de%20nuestro%20planeta">
@@ -109,7 +178,7 @@
             <h4>
                 <a style="text-decoration: none; color:#9DB6FF;"
                    href="https://www.investopedia.com/terms/g/green_tech.asp">
-                    How It Works, Types, Adoption, and Examples</a></h4><br>
+                    How It Works, Types, Adoption, and Examples</a></h4>
         </div>
     </div>
     <map name="social">
