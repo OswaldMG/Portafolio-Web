@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="StyleDataSheets/NewMenu.css">
     <link rel="stylesheet" type="text/css" href="StyleDataSheets/Ayuda_Style.css">
     <link rel="stylesheet" type="text/css" href="StyleDatasheets/BodyStyle.css">
+    <script src="Reactive/mail.js"></script>
 
     <!-- Código de instalación Cliengo para https://oswaldmg.github.io/Portafolio-Web/ -->
     <script type="text/javascript">
@@ -29,56 +30,52 @@
                 <li><a href="Actual.html">Situacion actual</a></li>
                 <li><a href="Blog.html">Blog y Comunidad</a>
                     <ul>
-                        <li><a href="" style="width: 88%";>Noticias Recientes</a></li>
-                        <li><a href="" style="width: 88%";>Memes de la Comunidad</a></li>
+                        <li><a href="Memes.html" style="width: 88%";>Memes de la Comunidad</a></li>
                     </ul>
                 </li>
                 <li><a href="Ayuda.html">Ayuda y Contacto</a>
                     <ul>
                         <li><a href="Preguntas%20frecuentes.html" style="width: 88%";>Preguntas Frecuentes</a></li>
                         <li><a href="https://green-tech-website.000webhostapp.com" style="width: 88%";>Manda Tu Opinion</a></li>
-                        <li><a href="" style="width: 88%";>Perfil del Administrador</a></li>
+                        <li><a href="Perfil.html" style="width: 88%";>Perfil del Administrador</a></li>
                     </ul>
                 </li>
             </ul>
         </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
     </div>
     <br><br><br>
-    <h1 id="Entrada">Ayuda y Atencion al usuario</h1>
+    <h1 style="text-align: center">Ayuda y Atencion al usuario</h1>
 </header>
 <table class="Container">
     <tbody>
     <tr>
         <td><section class="cuerpo1"><!--Seccion principal-->
-        <p>Si necesitas contactar con el administrador de la pagina o asociados
+        <p style="text-align: justify">Si necesitas contactar con el administrador de la pagina o asociados
             elige alguna de las siguientes opciones:</p>
         <form>
             <ul class="list">
-                <li>Via Whatsapp</li>
-                <p>Si requiere realizar una queja directa puede utilizar esta via.<br>
-                El minimo tiempo de espera es de 1 a 2 dias.</p>
-                <li>Correo Electronico</li>
-                <p>Si tienes alguna suguerencia, opinion personal, archivos que quieras publicar
+                <li><b>Correo Electronico</b></li>
+                <p style="text-align: justify">Si tienes alguna suguerencia, opinion personal, archivos que quieras publicar
                 en el espacio de comunidad del blog o algo que no requiera de atencion inmediata,
                 recomiendo el correo electronico que tiene la pagina</p>
-                <li>Redes Sociales</li>
-                <p>Si solo quieres estar al pendiente de alguna actualizacion menor o simplemente
+                <li><b>Redes Sociales</b></li>
+                <p style="text-align: justify">Si solo quieres estar al pendiente de alguna actualizacion menor o simplemente
                 conocer y seguir de mejor forma al administrador entonces checa las redes sociales.
                 <br>Un entorno menos serio que la pagina.</p>
             </ul>
         </form>
-        <p>
+        <p style="text-align: justify">
             Tambien en la barra lateral podras encontrar otros medios para apoyarte sin tener
             que esperar, aqui sus funciones: [Pendiente de actualizar]
         </p>
         <form>
             <ul style="list-style-image: url('');" class="list">
-                <li>Cuestionario</li>
-                <p>Un feedback sencillo y rapido para valorar en general la pagina y su construccion.</p>
-                <li>Preguntas frecuentes</li>
-                <p>Las dudas mas generales acerca de la pagina pueden ser encontradas aqui.</p>
+                <li><b>Cuestionario</b></li>
+                <p style="text-align: justify">Un feedback sencillo y rapido para valorar en general la pagina y su construccion.</p>
+                <li><b>Preguntas frecuentes</b></li>
+                <p style="text-align: justify">Las dudas mas generales acerca de la pagina pueden ser encontradas aqui.</p>
                 <li>Perfil del Administrador</li>
-                <p>Mas acerca del administrador, su hoja de vida y su curriculum.</p>
+                <p style="text-align: justify">Mas acerca del administrador, su hoja de vida y su curriculum.</p>
             </ul>
         </form>
     </section></td>
@@ -95,8 +92,12 @@
         <h4>Preguntas Frecuentes</h4>
         <img src="index_archives/Icons/account_circle.png" id="quest" usemap="#admin">
         <map name="admin">
-            <area shape="circle" coords="1,1,100,100" href="ObtenerTotales%20si.html">
+            <area shape="circle" coords="1,1,100,100" href="Perfil.html">
         </map>
+        <h4>Perfil del Administrador</h4>
+        <button onclick="mensaje()">
+        <img src="index_archives/Icons/mail.png" id="quest">
+        </input>
         <h4>Perfil del Administrador</h4>
     </aside></td>
 </tr>
